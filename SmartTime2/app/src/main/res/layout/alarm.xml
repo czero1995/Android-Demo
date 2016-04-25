@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.example.czero.smarttime.Alarm
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <ListView
+           android:id="@+id/listview"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1">
+       </ListView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="开启震动"
+               android:textSize="20sp"
+               android:id="@+id/checkbox"/>
+       </LinearLayout>
+       <Button
+           android:id="@+id/btn_addalarm"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/addalarm"
+           android:background="@drawable/light"
+
+           />
+   </com.example.czero.smarttime.Alarm>
+
+</LinearLayout>

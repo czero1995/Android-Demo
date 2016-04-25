@@ -1,0 +1,208 @@
+package com.example.czero.smarttime;
+
+import android.app.AlarmManager;
+
+import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.app.Service;
+import android.app.TimePickerDialog;
+import android.content.Context;
+
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Vibrator;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TimePicker;
+import android.widget.Toast;
+import android.os.Vibrator;
+import java.util.Calendar;
+import java.util.List;
+
+
+/**
+ * Created by zake on 4/9/16.
+ */
+public class Alarm extends LinearLayout {
+    private ArrayAdapter<AlarmData> adapter;
+    private AlarmManager alarmManager;
+    private ListView listView;
+    private Button btn_addalarm;
+    private static final String KEY_ALARM_LIST = "alarmlist";
+    private CheckBox checkBox;
+
+    private Vibrator vibrator;
+    public Alarm(Context context) {
+        super(context);
+        init();
+    }
+
+    public Alarm(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public Alarm(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+        checkBox= (CheckBox) findViewById(R.id.checkbox);
+        checkBox.setChecked(true);
+        listView = (ListView) findViewById(R.id.listview);
+        btn_addalarm = (Button) findViewById(R.id.btn_addalarm);
+        adapter = new ArrayAdapter<AlarmData>(getContext(), android.R.layout.simple_list_item_1);
+        listView.setAdapter(adapter);
+        init();
+        readSaveAlarm();
+
+//     checkBox.setOnClickListener(new OnClickListener() {
+//         @Override
+//         public void onClick(View v) {
+//             if(checkBox.isChecked()){
+//                 vibrator();
+//                 Toast.makeText(getContext(),"开启震动",Toast.LENGTH_SHORT).show();
+//             }
+//             if(!checkBox.isChecked()){
+//                 vibrator.cancel();
+//                 Toast.makeText(getContext(),"关闭震动",Toast.LENGTH_SHORT).show();
+//
+//             }
+//         }
+//     });
+        btn_addalarm.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addAlarm();
+            }
+        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+                new AlertDialog.Builder(getContext()).setTitle("操作选项").setItems(new CharSequence[]{"删除", "编辑"}, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which) {
+                            case 0:
+                                deleteAlarm(position);
+                                break;
+                            case 1:
+                                editor(position);
+                                deleteAlarm(position);
+                                break;
+                        }
+                    }
+                }).setNegativeButton("取消", null).show();
+            }
+
+            private void deleteAlarm(int position) {
+                adapter.remove(adapter.getItem(position));
+                saveAlarm();
+
+            }
+        });
+    }
+    private void vibrator(){
+        Vibrator vibrator = (Vibrator) getContext().getSystemService(Service.VIBRATOR_SERVICE);
+        vibrator.vibrate(new long[]{1000,3000,1000,3000,1000,3000,1000,3000,1000,3000,1000,3000,1000,3000,1000,3000,1000,3000,1000,3000},-1 );
+
+    }
+    private void init(){
+        alarmManager = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
+    }
+
+    private void addAlarm() {
+        Calendar c = Calendar.getInstance();
+        new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
+                calendar.set(Calendar.MINUTE, minute);
+                calendar.set(Calendar.SECOND, 0);
+                calendar.set(Calendar.MILLISECOND, 0);
+                Calendar currentTime = Calendar.getInstance();
+                if (calendar.getTimeInMillis() <= currentTime.getTimeInMillis()) {
+                    calendar.setTimeInMillis(calendar.getTimeInMillis() + 24 * 60 * 60 * 1000);
+                }
+                adapter.add(new AlarmData(calendar.getTimeInMillis()));
+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 5 * 60 * 1000,
+                        PendingIntent.getBroadcast(getContext(), 0, new Intent(getContext(), AlarmReceiver.class), 0));
+                saveAlarm();
+            }
+
+        }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show();
+
+    }
+    private void editor(int position){
+        addAlarm();
+    }
+
+    private void saveAlarm() {
+        SharedPreferences.Editor editor = getContext().getSharedPreferences(Alarm.class.getName(), Context.MODE_PRIVATE).edit();
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < adapter.getCount(); i++) {
+            sb.append(adapter.getItem(i).getTime()).append(",");
+            if (sb.length() > 1) {
+                String content = sb.toString().substring(0, sb.length() - 1);
+                editor.putString(KEY_ALARM_LIST, content);
+            } else {
+                editor.putString(KEY_ALARM_LIST, null);
+            }
+            editor.commit();
+        }
+    }
+
+    private void readSaveAlarm() {
+        SharedPreferences sp = getContext().getSharedPreferences(Alarm.class.getName(), Context.MODE_PRIVATE);
+        String content = sp.getString(KEY_ALARM_LIST, null);
+        if (content != null) {
+            String[] timeStrings = content.split(",");
+            for (String string : timeStrings) {
+                adapter.add(new AlarmData(Long.parseLong(string)));
+            }
+        }
+    }
+
+    private static class AlarmData {
+        private final long time;
+        private String timeLabel;
+        private Calendar date;
+
+        public AlarmData(long time) {
+            this.time = time;
+            date = Calendar.getInstance();
+            date.setTimeInMillis(time);
+            timeLabel = String.format("%d年%d月%d日:%d:%d", date.get(Calendar.YEAR), date.get(Calendar.MONTH) + 1, date.get(Calendar.DAY_OF_MONTH), date.get(Calendar.HOUR_OF_DAY),
+                    date.get(Calendar.MINUTE));
+        }
+
+
+        public long getTime() {
+            return time;
+        }
+
+        public String getTimeLaybel() {
+            return timeLabel;
+        }
+
+        public String toString() {
+            return getTimeLaybel();
+
+        }
+
+
+    }
+
+}

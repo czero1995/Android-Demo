@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">时间工具</string>
+    <string name="getnettime">获取网络时间</string>
+    <string name="time">时钟</string>
+    <string name="alarmtime">闹钟</string>
+    <string name="timer">计时器</string>
+    <string name="watchtimer">秒表</string>
+    <string name="addalarm">添加闹钟</string>
+    <string name="starttimer">输入时间开始计时</string>
+    <string name="pausetimer">暂停</string>
+    <string name="continuetimer">继续</string>
+    <string name="resettimer">重置</string>
+    <string name="startwatchtimer">开始</string>
+    <string name="pausewatchtimer">暂停</string>
+    <string name="continuewatchtimer">继续</string>
+    <string name="resetwatchtimer">重置</string>
+    <string name="lapwatchtimer">记录</string>
+    <string name="timertool">时间工具</string>
+</resources>

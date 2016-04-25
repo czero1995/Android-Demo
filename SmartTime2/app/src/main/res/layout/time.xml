@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.czero.smarttime.Time
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <AnalogClock
+            android:id="@+id/analogClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/showtime"
+
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/nettime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn_nettime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/getnettime"
+            android:layout_gravity="center"
+            android:background="@drawable/light" />
+    </com.example.czero.smarttime.Time>
+
+</LinearLayout>
