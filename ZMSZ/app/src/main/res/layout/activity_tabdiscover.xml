@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.example.czero.zmsz.ZMSZView.DiscoverActivity
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="#FFFF8833"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="1.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFF8833" />
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.example.czero.zmsz.ZMSZView.DiscoverPush
+                        android:id="@+id/push"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="推推推推推推推\推推推" />
+                    </com.example.czero.zmsz.ZMSZView.DiscoverPush>
+
+                    <com.example.czero.zmsz.ZMSZView.DiscoverTalk
+                        android:id="@+id/happytalk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="吐槽啊吐槽" />
+                    </com.example.czero.zmsz.ZMSZView.DiscoverTalk>
+
+                    <com.example.czero.zmsz.ZMSZView.DiscoverPush
+                        android:id="@+id/twotrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="交易吧" />
+                    </com.example.czero.zmsz.ZMSZView.DiscoverPush>
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </com.example.czero.zmsz.ZMSZView.DiscoverActivity>
+
+
+</LinearLayout>

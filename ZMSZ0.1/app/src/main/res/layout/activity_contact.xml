@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:lineSpacingMultiplier="1.4"
+        android:text="    纵梦汕职,是由汕头职业技术学院  'C橙团队'  开发的一款汕职社区移动生活类手机App
+     纵梦汕职集多功能于一身,可以轻松让你获得校园一手咨询是汕职生活的得力助手
+    C橙团队一直致力于纵梦汕职的开发工作,希望能够得到更多校友的支持与建议,我们将不断的更新和完善.
+    同时也乐意和相关的校友合作,欢迎联系C橙团队
+
+   联系方式:  C橙团队
+   电话:  13417020636    698979
+    QQ:  374139613
+  微信:374139613
+
+    感谢您的使用" />
+
+</LinearLayout>
