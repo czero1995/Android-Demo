@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <WebView
+        android:id="@+id/searchwebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </WebView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="考试查询"
+        android:textColor="#FFFF8833"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFF8833" />
+
+    <Button
+        android:id="@+id/qmcj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="期末成绩查询"/>
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff" />
+    <Button
+        android:id="@+id/sljcj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="四六级成绩查询"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff" />
+    <Button
+        android:id="@+id/jsjdj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="计算机等级查询"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="好好学习,天天向上"
+        android:textColor="#FFFF8833"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFF8833" />
+
+    <Button
+        android:id="@+id/dccs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="词汇量测试"/>
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/dati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="有奖问答"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="在线学英语"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff" />
+
+
+</LinearLayout>

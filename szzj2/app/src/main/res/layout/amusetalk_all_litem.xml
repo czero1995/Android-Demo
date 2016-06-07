@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="5dp"
+        android:background="#F5F5F5"
+        android:padding="5dp" >
+
+
+        <TextView
+            android:textColor="#ff8833"
+            android:id="@+id/tv_amusetalk_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="汕职院!"
+            android:textSize="16sp" />
+
+
+        
+        <TextView
+            android:id="@+id/tv_trade_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="2014-9-15"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

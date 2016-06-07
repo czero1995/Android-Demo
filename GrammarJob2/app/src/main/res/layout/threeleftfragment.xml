@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A4D3EE"
+                android:text="高级句型-简化从句"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/idthreea_xrczjjh"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="形容词子句简化"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/idthreeb_mczjjh"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="名词子句简化"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/idthreec_fczjjhc"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="副词子句简化"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

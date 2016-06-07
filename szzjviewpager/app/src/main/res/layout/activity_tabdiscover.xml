@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="发现更大的世界与更小的自己"
+        android:textColor="#FFFF8833"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="222dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:background="#FFFF8833"
+        />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/news"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="#ff8833"
+        android:text="新闻速推"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+    <Button
+       android:id="@+id/lovewall"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="#dd3265"
+
+        android:text="表白墙"
+        android:textColor="#ff51"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/amusetalk"
+        android:layout_width="100dp"
+
+        android:layout_height="80dp"
+        android:background="#be4"
+        android:text="开心吐槽"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+</LinearLayout>
+
+

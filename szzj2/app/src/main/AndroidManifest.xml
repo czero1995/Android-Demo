@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.czero.szzj" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--推送所需的权限-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name=".SZZJView.WELCOMEZMSZ" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SZZJView.LoginActivity"/>
+        <activity android:name=".SZZJView.RegisterActivity"/>
+        <activity android:name=".SZZJView.MainActivity"/>
+        <activity android:name=".SZZJView.ServerActivity"/>
+        <activity android:name=".SZZJView.DiscoverActivity"/>
+        <activity android:name=".SZZJView.MeActivity"/>
+        <activity android:name=".SZZJView.MineInfoActivity"/>
+        <activity android:name=".SZZJView.MineInfoEditActivity"/>
+        <activity android:name=".SZZJView.FeedbackActivity"/>
+        <activity android:name=".SZZJView.ContactActivity"/>
+        <activity android:name=".SZZJView.LostFoundActivity"/>
+        <activity android:name=".SZZJView.LostFoundAddActivity"/>
+        <activity android:name=".SZZJView.KuaidiActivity"/>
+        <activity android:name=".SZZJView.WaimaiItemActivity"/>
+        <activity android:name=".SZZJView.WaimaiActivity"/>
+        <activity android:name=".SZZJView.SearchphoneActivity"/>
+        <activity android:name=".SZZJView.SecondTradeActivity"/>
+        <activity android:name=".SZZJView.LoveWallActivity"/>
+        <activity android:name=".SZZJView.AmuseTalkActivity"/>
+        <activity android:name=".SZZJView.NewsActivity"/>
+        <activity android:name=".adbanner.BaseWebActivity"/>
+        <activity android:name=".SZZJView.JZZPActivity"/>
+        <activity android:name=".SZZJView.TourActivity"/>
+        <activity android:name=".SZZJView.UnionActivity"/>
+        <activity android:name=".SZZJView.DongGanSZ"/>
+        <activity android:name=".SZZJView.NewPeople"/>
+        <activity android:name=".SZZJView.SearchResultActivity"/>
+
+        <service
+            android:label="PushService"
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:process="cn.bmob.push"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="cn.bmob.push.PushReceiver" >
+            <intent-filter>
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听网络连通性 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 第四部中创建的消息接收器，在这里进行注册 -->
+        <receiver android:name=".SZZJPush.PushReceiver">
+            <intent-filter >
+                <action android:name="cn.bmob.push.action.MESSAGE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

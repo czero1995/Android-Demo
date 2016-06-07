@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="5dp"
+        android:background="#F5F5F5"
+        android:padding="5dp" >
+
+        <!-- 物品名称 -->
+
+        <TextView
+            android:id="@+id/tv_jzzp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="好滋味招收送外卖"
+            android:textColor="#ff8833"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:autoLink="phone"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_photo"
+            android:drawablePadding="5dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="138024249542"
+
+            android:textSize="12sp"></TextView>
+        <!-- 物品类型 -->
+
+        <TextView
+            android:id="@+id/tv_jzzp_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="勤劳勇敢,丰衣足食"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/tv_jzzp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="2014-9-15"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

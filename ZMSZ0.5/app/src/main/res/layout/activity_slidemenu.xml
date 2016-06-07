@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zmsz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20sp"
+            android:paddingTop="40sp"
+            android:text="纵梦汕职"
+            android:textColor="#FF8833"
+            android:textSize="30sp" />
+
+        <Button
+
+            android:id="@+id/menu_mineinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:text="个人信息" />
+
+
+        <Button
+            android:id="@+id/menu_schoolnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:text="学校官网" />
+
+        <Button
+            android:id="@+id/menu_sharefriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:text="推荐给朋友" />
+
+        <Button
+            android:id="@+id/menu_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:text="联系我们" />
+
+        <Button
+            android:id="@+id/menu_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:text="用户反馈" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分享到朋友圈" />
+
+            <Button
+                android:id="@+id/menu_sendwechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_left_radius_color_square"
+                android:text="点击分享" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

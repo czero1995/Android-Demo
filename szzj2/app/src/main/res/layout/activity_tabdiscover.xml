@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="发现更大的世界与更小的自己"
+        android:textColor="#FFFF8833"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:background="#FFFF8833"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/lovewall"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="#7B68EE"
+            android:layout_marginRight="30dp"
+            android:text="表白墙"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/news"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="#ff8833"
+        android:layout_marginRight="30dp"
+        android:text="新闻速推"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/amusetalk"
+        android:layout_width="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="80dp"
+        android:background="#87CEFA"
+        android:text="开心吐槽"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/szgl"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="#C2C2C2"
+        android:text="汕职攻略"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/chgl"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="80dp"
+        android:background="#C2C2C2"
+        android:text="吃货攻略"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/lygl"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="80dp"
+        android:background="#C2C2C2"
+        android:text="旅游攻略"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

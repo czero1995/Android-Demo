@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语气是利用动词变化来表达'真假'口吻的方式.依各种不同程度的'真假'口吻,可以细分为四种语气:/n
+        叙述事实语气:表示说的是真的\n
+        条件语气:表示真假还不能确定\n
+        假设语气:说反话,表示所说的与事实相反\n
+        祈使语气:表示希望成真,但尚未实现\n" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="假设语气分为现在时间,过去时间,未来时间\n
+         现在时间:If  i were you , i wouldn't do it\n
+         过去时间:if i had known earlier, i might have done something\n
+         未来时间:If i were to take the bribe, i could were look other people in the eye again"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

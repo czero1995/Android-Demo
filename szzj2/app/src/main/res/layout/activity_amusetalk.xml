@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/lv_amusetalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etamusetalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="我想吐槽,发泄一下(*^__^*) 嘻嘻……" />
+
+        <Button
+            android:id="@+id/btn_amusetalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吐槽"
+            android:background="@drawable/shape_left_radius_color_square"/>
+    </LinearLayout>
+</LinearLayout>

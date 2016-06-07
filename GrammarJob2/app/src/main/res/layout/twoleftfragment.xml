@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A4D3EE"
+                android:text="中级句型-合句与复句"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/idtwoa_hj"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="合句"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/idtwoa_mczj"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="名词子句"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/idtwob_fczj"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="副词子句"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/idtwoc_gxzj"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="关系子句"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/idtwod_zcdcyzx"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="主词动词一致性"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/idtwoe_dzj"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="倒装句"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
