@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:padding="10dp"
+    android:autoLink="all"
+    android:text="
+    学院办公室	0754-83582511\n\n
+    教务处	        0754-83582510\n\n
+    招生办	        0754-88630402\n\n
+    学生工作处	0754-83582516\n\n
+    计划财务部	0754-83582518\n\n
+    东墩校区	    0754-88670571\n\n
+    新津校区	    0754-88800901\n\n
+"/>
+    </ScrollView>
+</LinearLayout>

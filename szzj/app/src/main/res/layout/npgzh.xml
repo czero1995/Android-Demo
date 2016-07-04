@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <include layout="@layout/hearder_gzh"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+      android:textColor="#6495ED"
+       android:textIsSelectable="true"
+       android:text="
+        纵梦汕职\n\n
+
+       5234团队\n\n
+
+       520汕职院\n\n
+
+       汕头职业技术学院\n\n
+
+       汕职院学生会\n\n
+
+       计算机系团总支学生分会\n\n
+
+       汕职院机电工程系团总支学生分会\n\n
+
+       汕职院经管系团总支\n\n
+
+       汕职院经管系学生分会\n\n
+
+       汕职院外语系团总支学生分会\n\n
+
+       装饰艺术设计\n\n
+       "/>
+   </ScrollView>
+</LinearLayout>

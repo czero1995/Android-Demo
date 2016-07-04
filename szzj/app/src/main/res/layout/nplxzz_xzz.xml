@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:autoLink="all"
+                android:text="
+    学院各系联系方式	:\n
+    机电工程系	0754-83582569\n
+    计算机系	    0754-83582521\n
+    经济管理系	0754-83582520\n
+    人文社科系	0754-88634486\n
+    外语系	         0754-83582522\n
+    学前教育系	0754-88632448\n
+    艺术体育系	0754-83582519\n
+    自然科学系	0754-88630401\n
+"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:text="
+    五大系联系方式\n
+    机电系学生会主席	卓炯浩	13417063302/611077\n
+    经管系学生会主席	卢晓丹	13417021136/699004\n
+    计算机系学生会主席 赖文讯	13417057895/614739\n
+    外语系学生会主席	吴伟民	13417064305/611022\n
+    艺体系学生会主席	冯雨颖	13417057192/611456"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:padding="10dp"
+
+                android:text="
+    广州qq群:193276432\n
+    河源qq群:150093533\n
+    梅州qq群:143616812\n
+    珠海qq群:256718591\n
+    清远qq群:62638972\n
+    汕尾qq群:262196325\n
+    茂名qq群:70355204\n
+    惠州qq群:472512126\n
+    肇庆qq群:364249237\n
+    云浮qq群:185639668\n
+    湛江qq群:468232291\n
+"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

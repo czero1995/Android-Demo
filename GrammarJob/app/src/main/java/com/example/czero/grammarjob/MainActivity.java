@@ -24,18 +24,50 @@ import com.tencent.mm.sdk.modelmsg.WXTextObject;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
 public class MainActivity extends Activity implements View.OnClickListener{
     private Button one,two,three,sendtext;
     private Slidemenu slidemenu;
     private static final String APP_ID="wx03420e7bca4a768f";
     private IWXAPI api;
     private CheckBox checkbox;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+
+
+        String DB_PATH = "/data/data/com.example.czero.grammarjob/databases/";
+        String DB_NAME = "question.db";
+        if (new File(DB_PATH + DB_NAME).exists() == false) {
+            File dir = new File(DB_PATH);
+            if (!dir.exists()) {
+                dir.mkdirs();
+            }
+            try {
+                InputStream is = getBaseContext().getAssets().open(DB_NAME);
+                OutputStream os = new FileOutputStream(DB_PATH + DB_NAME);
+                byte[] buffer = new byte[1024];
+                int length;
+                while ((length = is.read(buffer)) > 0) {
+                    os.write(buffer, 0, length);
+                }
+                os.flush();
+                os.close();
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         api = WXAPIFactory.createWXAPI(MainActivity.this, APP_ID);
         api.registerApp(APP_ID);
         one= (Button) findViewById(R.id.one);

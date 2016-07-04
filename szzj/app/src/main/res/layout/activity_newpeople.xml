@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/hearder_newpeople" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newpeople_szyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_szyl"
+            android:text="汕职一览" />
+
+
+        <Button
+            android:id="@+id/newpeople_xsbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_xxbd"
+            android:text="新生报到" />
+
+
+        <Button
+            android:id="@+id/newpeople_lxzz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_lxzz"
+            android:text="联系组织" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newpeople_jtcx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_kuaidi"
+            android:text="交通出行" />
+
+
+        <Button
+            android:id="@+id/newpeople_xytb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_tieba"
+            android:text="校园贴吧" />
+
+
+        <Button
+            android:id="@+id/newpeople_gzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_gzh"
+            android:text="公众号" />
+
+    </LinearLayout>
+</LinearLayout>

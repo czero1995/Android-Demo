@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/xsbdtop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/xsbd_top"
+            android:name="com.example.czero.szzj.SZZJFragment.XSBDTop"/>
+    </FrameLayout>
+
+    <fragment
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:name="com.example.czero.szzj.SZZJFragment.XSBDBottom"
+    android:id="@+id/xsbd_bottom"/>
+
+</LinearLayout>

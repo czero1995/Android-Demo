@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:padding="10dp"
+    android:text="新生凭《录取通知书》到各系接待处报到，缴交个人档案、党（团）集、相片及户口迁移等证件。\n
+已全额扣款的学生：到各系（校区）接待处开具宿舍安排及签领校服凭证，凭宿舍安排凭证到所在宿舍区宿管室报到，办理相关的入住手续。凭《录取通知书》及身份证原件到指定地点开通校园一卡通。\n
+未能全额缴费的学生：到各系绿色通道（接待处或系办）凭《家庭经济困难情况调查表》及困难有效证明材料领取《绿色通道申请表》（一式两份）填写，办理系办审批手续后到计财处绿色通道窗口办理院级审批手续。持《绿色通道申请表》到各系（校区）接待处开具宿舍安排及签领校服凭证，凭宿舍安排凭证到所在宿舍区宿管室报到，办理相关的入住手续。凭《录取通知书》及身份证原件到指定地点开通校园一卡通。\n
+尚未扣款的非贫困学生：按《缴费指引》到柜员机操作。持现金缴费，到建行（柜员机）存款并打印回执。持建行卡转账的，到柜员机办理转账。持回执到各系（校区）接待处开具宿舍安排及签领校服凭证，凭宿舍安排凭证到所在宿舍区宿管室报到，办理相关的入住手续。凭《录取通知书》及身份证原件到指定地点开通校园一卡通。\n
+温习提示：新生的个人档案、党（团）籍、录取通知书、相片及户口迁移凭证等资料由各系统一收取，按规定上交相关部门。
+"/>
+    </ScrollView>
+</LinearLayout>

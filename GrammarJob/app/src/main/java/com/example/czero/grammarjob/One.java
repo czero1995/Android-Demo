@@ -3,6 +3,7 @@ package com.example.czero.grammarjob;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ import android.widget.Toast;
  */
 public class One extends Activity implements View.OnClickListener {
     private Button btn_onea, btn_oneb, btn_onec, btn_oned, btn_onee, btn_onef, btn_oneg, btn_oneh,
-            btn_onei, btn_onej, btn_onek, btn_onel;
+            btn_onei, btn_onej, btn_onek, btn_onel,btn_onem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class One extends Activity implements View.OnClickListener {
         btn_onej = (Button) findViewById(R.id.idonej_xzfc);
         btn_onek = (Button) findViewById(R.id.idonek_dmc);
         btn_onel = (Button) findViewById(R.id.idonel_bdccz);
+        btn_onem = (Button) findViewById(R.id.idonem_lxt);
         btn_onea.setOnClickListener(this);
         btn_oneb.setOnClickListener(this);
         btn_onec.setOnClickListener(this);
@@ -45,6 +47,7 @@ public class One extends Activity implements View.OnClickListener {
         btn_onej.setOnClickListener(this);
         btn_onek.setOnClickListener(this);
         btn_onel.setOnClickListener(this);
+        btn_onem.setOnClickListener(this);
     }
 
     @Override
@@ -135,7 +138,9 @@ public class One extends Activity implements View.OnClickListener {
                 transactionl.replace(R.id.oneright_layout, oneLBdccz);
                 transactionl.commit();
                 break;
-
+            case R.id.idonem_lxt:
+                Intent intent = new Intent(One.this,lxt.class);
+                startActivity(intent);
 
         }
 

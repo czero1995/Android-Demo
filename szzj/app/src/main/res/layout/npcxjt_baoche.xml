@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:padding="10dp"
+    android:text="由于新生对学校的路线不熟悉,可以选择联系同乡会的包车团队,直达学校."/>
+            <Button
+                android:id="@+id/search_baoche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查看同乡包车"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

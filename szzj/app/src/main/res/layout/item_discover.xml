@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <!-- 商铺展示主图  66x66 -->
+
+    <ImageView
+        android:id="@+id/img_discover"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/ic_app"
+        android:contentDescription="活动展示主图" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignBaseline="@id/img_discover"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_discover"
+        android:background="#F5F5F5"
+        android:padding="5dp" >
+
+        <!-- 店铺名 -->
+
+        <TextView
+            android:id="@+id/tv_discover_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="可口可乐促销"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_discover_type"
+            android:layout_width="205dp"
+            android:layout_height="15dp"
+
+            android:text="Hot"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_discover_name" />
+
+        <!-- 店铺类型 -->
+
+        <TextView
+            android:id="@+id/tv_discover_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="活动内容"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

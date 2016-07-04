@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="
+    1.教育学院\n
+    2.东厦中学\n
+    3.国际大酒店\n
+    4.金砂公园\n
+    5.汕头中旅\n
+    6.中心医院\n
+    7.东征军纪念馆\n
+    8.人民广场北\n
+    9.利鸿基\n
+    10.利安外马路口\n
+    11.外马第三小学\n
+    12.市二医院\n
+    13.汕头开埠文化馆\n
+    14.商平外马路口\n
+    15.镇邦路中\n
+    16.金平文化创意园\n
+    17.上人家\n
+    18,蜈田村\n
+    19.汽车渡口\n
+    20.市三医院\n
+    21.礐石风景区\n
+    22.西湖轮渡码头\n
+    23.礐石中专\n
+    24.九宫娘娘\n
+    25.礐石绿道\n
+    26.市跳水馆\n
+    27.澳头村\n
+    28.葛州村委\n
+    29.华能电厂\n
+    30.汕头迎宾花园\n
+    31.北山湾泳场\n
+    32.粤东高级技工学校\n
+    33.[汕头职业技术学院]\n
+    34.东湖村\n
+    35.南湖村\n
+    36.市委党校\n
+    37.濠江隶头\n
+    38.广澳中学\n
+    39.广澳街道办\n
+    40.青云岩\n
+    41.红桥路\n
+    42.南天大酒店\n
+    43.濠江区政府 "/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

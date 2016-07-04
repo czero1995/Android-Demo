@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="10dp"
+    android:text="
+    1.火车站\n
+    2.客运中心站\n
+    3.经纬广场\n
+    4.黄山珠池路口\n
+    5.星湖城西\n
+    6.帝豪酒店西\n
+    7.潮华雅居东\n
+    8.逸景蓝湾西\n
+    9.阳光海岸南︵韩江路︶\n
+    10.中泰运动场北︵泰山路︶\n
+    11.澳头\n
+    12.澳头村\n
+    13.华能电厂\n
+    14.汕头迎宾花园\n
+    15.北山湾泳场\n
+    16.粤东高级技工学校\n
+    17.[汕头职业技术学院北门]\n
+    18.[汕头职业技术学院南门]\n
+    19.东湖村\n
+    20.东湖游乐场\n
+    21.广达路\n
+    22.濠江埭头\n
+    23.广澳中学\n
+    24.青州\n
+    25.青云岩\n
+    26.红桥路︵磊广大道︶\n
+    27.南天大酒店\n
+    28.濠江区政府\n
+    29.海旁路"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

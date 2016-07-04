@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:padding="10dp"
+    android:text="
+  1.录取通知书【须到当地派出所确认身份证号码】\n
+  2.档案【凭录取通知书到毕业学校领取并交于报到当日上交各学系】\n
+  3.小1寸照片10张\n
+  4.党团关系资料\n
+  5.广东省户籍的男生须上交兵役证\n
+  备注：新生一般不办理户口迁移手续，若有需要迁移户口，请在新生报到时将户口交新生所读系。"
+/>
+    </ScrollView>
+</LinearLayout>

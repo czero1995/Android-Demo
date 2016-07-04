@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:padding="10dp"
+    android:text="1..寻找自己所在院系迎新人员\n
+2.到达新生接待处\n
+3.进行新生资格审核【出示身份证、录取通知书、准考证、档案】\n
+4.领取宿舍房间号、报到证（包括院系、学号）\n
+5.到达住宿管理中心办理住宿手续\n
+6.出示报到证，填写个人资料\n
+7.领取宿舍号、床号、以及宿舍钥匙\n
+8.缴纳学费 财务处 已通过银行卡汇款的领取收据即可\n
+9户口迁移 报到处 交户口迁移证\n
+10.办理保险 学工处\n
+11.办理校园一卡通  通常学校已经办理好你只要交钱就行\n
+12.办理党团关系 团委 交党团组织介绍信\n
+13.男生带上兵役证"/>
+    </ScrollView>
+</LinearLayout>

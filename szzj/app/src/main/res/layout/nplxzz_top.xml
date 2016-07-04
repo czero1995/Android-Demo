@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:autoLink="all"
+    android:padding="10dp"
+    android:text="
+    青年志愿者的联系方式\n\n
+    联系方式：	吴平敬	13417032142/699744\n\n
+    帮助方式：	在开学的两天青年志愿者会穿上黄色的志愿服在学院前门摆摊负责签到，后门的志愿者则会指引新生到前门签到。同时，志愿者们也会在汕头汽车总站和火车站迎接师弟师妹的到来。\n
+"/>
+</LinearLayout>
