@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/qmcj_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="张三"/>
+        <TextView
+            android:id="@+id/qmcj_xi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:text="计算机系"/>
+        <TextView
+            android:id="@+id/qmcj_zhuanye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="软件技术"/>
+    </LinearLayout>
+    <TextView
+        android:layout_margin="30dp"
+        android:id="@+id/qmcj_cj"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="成绩100分"
+        android:gravity="center"/>
+</LinearLayout>

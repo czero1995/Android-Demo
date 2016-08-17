@@ -14,6 +14,7 @@ import com.example.czero.szzj.SZZJData.LoveItemListAdapter;
 
 import com.example.czero.szzj.SZZJModel.Love;
 import com.example.czero.szzj.SZZJModel.Shop;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ import java.util.List;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.listener.FindListener;
 
-public class WaimaiItemActivity extends Activity {
+public class WaimaiItemActivity extends BaseActivity {
 
 
     private Shop shop; // 当期选择的Shop

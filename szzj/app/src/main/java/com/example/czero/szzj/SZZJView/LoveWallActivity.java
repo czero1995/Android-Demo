@@ -21,6 +21,8 @@ import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJData.LoveItemListAdapter;
 import com.example.czero.szzj.SZZJModel.Love;
 import com.example.czero.szzj.SZZJUtil.Util;
+import com.example.czero.szzj.View.SupperTitle;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +35,7 @@ import cn.bmob.v3.listener.SaveListener;
 /**
  * Created by zake on 5/28/16.
  */
-public class LoveWallActivity extends Activity {
+public class LoveWallActivity extends BaseActivity {
     private String loveurl = "http://mp.weixin.qq.com/mp/homepage?__biz=MzAwMjE0ODc1OQ==&hid=4&sn=a082b8ccdb03e7c62ed2ca42a8548de7#wechat_redirect";
     private Button btn_love;
     private Button btn_tolove;
@@ -45,6 +47,11 @@ public class LoveWallActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lovewall);
+
+         SupperTitle supperTitle;
+        supperTitle = (SupperTitle) findViewById(R.id.suppertitle);
+        supperTitle.setTitle("表白墙");
+        supperTitle.setTitleBackground(getResources().getColor(R.color.white));
         lvlovewall = (ListView) findViewById(R.id.lv_lovewall);
         loveItemListAdapter = new LoveItemListAdapter(LoveWallActivity.this, (ArrayList<Love>) love);
         btn_love = (Button) findViewById(R.id.btn_love);

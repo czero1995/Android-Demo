@@ -15,9 +15,9 @@ import android.widget.Toast;
 
 import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJData.DiscoverListAdapter;
-import com.example.czero.szzj.SZZJData.MarqueeView;
 import com.example.czero.szzj.SZZJModel.Discover;
 import com.example.czero.szzj.SmartC.SmarcActivity;
+import com.example.czero.szzj.View.marqeeview.MarqueeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ import cn.bmob.v3.listener.FindListener;
 public class DiscoverActivity extends Activity implements View.OnClickListener, OnItemClickListener {
     private Button news, lovewall, hbhz, amusetalk, activity, pictext, qnzz, nsns, nlzx;
     private ListView lv_discover;
-    private MarqueeView marqueeView;
+
     private DiscoverListAdapter discoverListAdapter;
     private List<Discover> discoverList = new ArrayList<Discover>();
 
@@ -64,21 +64,7 @@ public class DiscoverActivity extends Activity implements View.OnClickListener, 
         amusetalk.setOnClickListener(this);
         activity.setOnClickListener(this);
         getDiscoverDate();
-        marqueeView = (MarqueeView) findViewById(R.id.marqueeView);
-        List<String> info = new ArrayList<>();
-        info.add("     欢迎使用汕职之家!");
-        info.add("     欢迎联系C橙团队!");
-        info.add("     知行合一,德技双馨!");
-        info.add("     够真橙,活青春!");
-        info.add("     橙心橙意为你好!");
-        info.add("     如有疑问,找汕职小C（＊＾＿＿＾＊）");
-        marqueeView.startWithList(info);
-        marqueeView.setOnItemClickListener(new MarqueeView.OnItemClickListener() {
-            @Override
-            public void onItemClick(int position, TextView textView) {
-                Toast.makeText(getApplicationContext(), textView.getText()+"", Toast.LENGTH_SHORT).show();
-            }
-        });
+
     }
 
 
@@ -102,19 +88,14 @@ public class DiscoverActivity extends Activity implements View.OnClickListener, 
                 Intent intent_activity = new Intent(DiscoverActivity.this, ActivityNews.class);
                 startActivity(intent_activity);
                 break;
-            case R.id.pic_text:
-                Intent intent_pictext = new Intent(DiscoverActivity.this, PicTextActivity.class);
-                startActivity(intent_pictext);
-                break;
+
             case R.id.hbhz:
                 toast("功能正在完善");
                 break;
             case R.id.qnzz:
                 toast("功能正在完善");
                 break;
-            case R.id.nsns:
-                toast("功能正在完善");
-                break;
+
             case R.id.smartc:
                 Intent intent_smartc = new Intent(DiscoverActivity.this, SmarcActivity.class);
                 startActivity(intent_smartc);

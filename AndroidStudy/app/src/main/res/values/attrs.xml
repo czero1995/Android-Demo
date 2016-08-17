@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--设置项目-->
+    <declare-styleable name="LineItem">
+        <attr name="textcolor" format="reference"/>
+        <attr name="rightimage" format="reference"/>
+        <attr name="midcontent" format="string"/>
+        <attr name="lineShown" format="boolean" />
+    </declare-styleable>
+
+    <!--公共标题-->
+    <declare-styleable name="SupperTitle">
+        <attr name="leftDrawable" format="reference"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="leftAction" format="string"/>
+        <attr name="rightAction" format="string"/>
+        <attr name="leftText" format="string"/>
+        <attr name="rightText" format="string"/>
+        <attr name="bottomText" format="string"/>
+        <attr name="barHeight" format="dimension"/>
+        <attr name="searchTitle" format="boolean"/>
+        <attr name="barBackground" format="reference"/>
+    </declare-styleable>
+
+    <!--加载进度条-->
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpbStyle" format="reference"/>
+        <attr name="cpb_color" format="color"/>
+        <attr name="cpb_colors" format="reference"/>
+        <attr name="cpb_stroke_width" format="dimension"/>
+        <attr name="cpb_min_sweep_angle" format="integer"/>
+        <attr name="cpb_max_sweep_angle" format="integer"/>
+        <attr name="cpb_sweep_speed" format="float"/>
+        <attr name="cpb_rotation_speed" format="float"/>
+    </declare-styleable>
+
+    <!--搜索标签栏-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--标题导航栏-->
+    <declare-styleable name="AdvancedPagerSlidingTabStrip">
+        <attr name="apTabIndicatorColor" format="color"/>
+        <attr name="apTabUnderlineColor" format="color"/>
+        <attr name="apTabDividerColor" format="color"/>
+        <attr name="apTabTextSelectColor" format="color"/>
+        <attr name="apTabIndicatorHeight" format="dimension"/>
+        <attr name="apTabUnderlineHeight" format="dimension"/>
+        <attr name="apTabDividerPadding" format="dimension"/>
+        <attr name="apTabPaddingLeftRight" format="dimension"/>
+        <attr name="apTabPaddingTopBottom" format="dimension"/>
+        <attr name="apTabScrollOffset" format="dimension"/>
+        <attr name="apTabBackground" format="reference"/>
+        <attr name="apTabShouldExpand" format="boolean"/>
+        <attr name="apTabTextAllCaps" format="boolean"/>
+        <attr name="apTabDrawMode" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="text" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="centered" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="circleSeparation" format="dimension" />
+        <attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <!--<attr name="radius" format="dimension" />-->
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Slidemenu">
+        <attr name="Slidemenu" format="dimension">
+
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="BannerLayoutStyle">
+        <attr name="selectedIndicatorColor" format="color|reference" />
+        <attr name="unSelectedIndicatorColor" format="color|reference" />
+        <attr name="indicatorShape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+
+        <attr name="selectedIndicatorHeight" format="dimension|reference" />
+        <attr name="selectedIndicatorWidth" format="dimension|reference" />
+
+        <attr name="unSelectedIndicatorHeight" format="dimension|reference" />
+        <attr name="unSelectedIndicatorWidth" format="dimension|reference" />
+
+        <attr name="indicatorPosition" format="enum">
+            <enum name="centerBottom" value="0" />
+            <enum name="rightBottom" value="1" />
+            <enum name="leftBottom" value="2" />
+            <enum name="centerTop" value="3" />
+            <enum name="rightTop" value="4" />
+            <enum name="leftTop" value="5" />
+        </attr>
+
+        <attr name="indicatorSpace" format="dimension|reference" />
+        <attr name="indicatorMargin" format="dimension|reference" />
+        <attr name="autoPlayDuration" format="integer|reference" />
+        <attr name="scrollDuration" format="integer|reference" />
+        <attr name="isAutoPlay" format="boolean"/>
+        <attr name="defaultImage" format="integer|reference"/>
+    </declare-styleable>
+</resources>

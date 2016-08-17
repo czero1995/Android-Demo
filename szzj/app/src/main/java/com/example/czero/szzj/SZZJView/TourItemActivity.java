@@ -8,8 +8,9 @@ import android.widget.Toast;
 import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJModel.Tour;
 import com.example.czero.szzj.SZZJModel.Union;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
-public class TourItemActivity extends Activity {
+public class TourItemActivity extends BaseActivity {
 
 
     private Tour tour;

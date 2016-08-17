@@ -1,245 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<lib.homhomlib.design.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:sliding_mode="both"
+    android:background="@color/white"
+    app:background_view="@layout/item_view">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ebm="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
+    <!--background_view为你的背景布局-->
 
-    <FrameLayout
-        android:id="@+id/framelayout"
-        android:layout_width="fill_parent"
-        android:layout_height="180dip"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.example.czero.szzj.bannerview.ViewFlow
-            android:id="@+id/viewflow"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-
-
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:drawableTop="@color/transparent"
-            android:gravity="center"
-            android:padding="3dip">
-
-            <com.example.czero.szzj.bannerview.CircleFlowIndicator
-                android:id="@+id/viewflowindic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:padding="2dip"
-                app:activeColor="#ff0000"
-                app:activeType="fill"
-                app:circleSeparation="20dip"
-                app:inactiveColor="#ffffff"
-                app:inactiveType="fill"
-                app:radius="4dip" />
-
-        </FrameLayout>
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/main_notice"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_below="@id/framelayout"
-        android:layout_gravity="center"></FrameLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+        <com.example.czero.szzj.View.bannar.BannerLayout
+            android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="200dp"
+            app:autoPlayDuration="5000"
+            app:defaultImage="@drawable/ic_app"
+            app:indicatorMargin="10dp"
+            app:indicatorPosition="rightBottom"
+            app:indicatorShape="rect"
+            app:indicatorSpace="3dp"
+            app:scrollDuration="900"
+            app:selectedIndicatorColor="?attr/colorPrimary"
+            app:selectedIndicatorHeight="6dp"
+            app:selectedIndicatorWidth="6dp"
+            app:unSelectedIndicatorColor="#99ffffff"
+            app:unSelectedIndicatorHeight="6dp"
+            app:unSelectedIndicatorWidth="6dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/bantouming">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_loudspeaker4"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+
+            android:background="@drawable/ic_activity"/>
+        <com.example.czero.szzj.View.marqeeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:paddingTop="10dp">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/searchresult"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_xxks"
-                    android:padding="10dip"
-                    android:text="学习考试"
-                    android:textSize="12sp" />
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <Button
+                        android:id="@+id/zhihuribao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_newpeople"
+                        android:padding="10dip"
+                        android:text="知乎日报"
+                        android:textSize="12sp" />
+
+                    <Button
+android:id="@+id/xiaoyuandongtai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_newpeople"
+                        android:padding="10dip"
+                        android:text="校园动态"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_course"
+                        android:padding="10dip"
+                        android:text="课表查询"
+                        android:textSize="12sp" />
 
 
-                <Button
-                    android:id="@+id/xinshengrukou"
-                    android:layout_width="wrap_content"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_newpeople"
-                    android:padding="10dip"
-                    android:text="新生入口"
-                    android:textSize="12sp" />
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <Button
+                        android:id="@+id/lostfound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_lostfound"
+                        android:padding="10dip"
+                        android:text="失物招领"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/secondtrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_secondtrade"
+                        android:padding="10dip"
+                        android:text="二手交易"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/tour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_tour"
+                        android:padding="10dip"
+                        android:text="出行旅游"
+                        android:textSize="12sp" />
 
 
-                <Button
-                    android:id="@+id/tour"
-                    android:layout_width="wrap_content"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_tour"
-                    android:padding="10dip"
-                    android:text="出行旅游"
-                    android:textSize="12sp" />
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp">
 
 
-                <Button
-                    android:id="@+id/union"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_union"
-                    android:padding="10dip"
-                    android:text="社团联合"
-                    android:textSize="12sp" />
+                    <Button
+                        android:id="@+id/waimai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_waimai"
+                        android:padding="10dip"
+                        android:text="外卖查询"
+                        android:textSize="12sp" />
 
 
+                    <Button
+                        android:id="@+id/union"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_union"
+                        android:padding="10dip"
+                        android:text="社团联合"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/lovewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawablePadding="12dp"
+                        android:drawableTop="@drawable/ic_kuaidi"
+                        android:padding="10dip"
+                        android:text="L表白墙"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.czero.szzj.View.ExpandableButtonMenu.ExpandableMenuOverlay
+                        android:id="@+id/button_menu"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_app"
+                        ebm:bottomPad="0.02"
+                        ebm:closeButtonSrc="@drawable/circle_close"
+                        ebm:dimAmount="0.8"
+                        ebm:distanceX="0.28"
+                        ebm:distanceY="0.17"
+                        ebm:leftButtonSrc="@drawable/circle_1"
+                        ebm:leftButtonText="@string/action_left"
+                        ebm:mainButtonSize="0.22"
+                        ebm:midButtonSrc="@drawable/circle_2"
+                        ebm:midButtonText="@string/action_mid"
+                        ebm:otherButtonSize="0.22"
+                        ebm:rightButtonSrc="@drawable/circle_3"
+                        ebm:rightButtonText="@string/action_right" />
+                </RelativeLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="30dp">
+        </ScrollView>
 
+    </LinearLayout>
 
-                <Button
-                    android:id="@+id/waimai"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_waimai"
-                    android:padding="10dip"
-                    android:text="外卖查询"
-                    android:textSize="12sp" />
-
-
-                <Button
-                    android:id="@+id/secondtrade"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_secondtrade"
-                    android:padding="10dip"
-                    android:text="二手交易"
-                    android:textSize="12sp" />
-
-
-                <Button
-                    android:id="@+id/jianzhizhaopin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_jzzp"
-                    android:padding="10dip"
-                    android:text="兼职招聘"
-                    android:textSize="12sp" />
-
-
-                <Button
-                    android:id="@+id/lostfound"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_lostfound"
-                    android:padding="10dip"
-                    android:text="失物招领"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="30dp">
-
-
-                <Button
-                    android:id="@+id/kuaidigongjiao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_kuaidi"
-                    android:padding="10dip"
-                    android:text="公交查询"
-                    android:textSize="12sp" />
-
-
-                <Button
-                    android:id="@+id/searchphone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_phone"
-                    android:padding="10dip"
-                    android:text="号码查询"
-                    android:textSize="12sp" />
-
-
-                <Button
-                    android:id="@+id/course"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-
-                    android:drawableTop="@drawable/ic_course"
-                    android:padding="10dip"
-                    android:background="@null"
-                    android:text="课表查询"
-                    android:textSize="12sp" />
-
-
-                <Button
-                    android:id="@+id/qmcj"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:drawableTop="@drawable/ic_searchresult"
-                    android:padding="10dip"
-                    android:text="成绩查询"
-                    android:textSize="12sp" />
-
-
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</RelativeLayout>
+</lib.homhomlib.design.SlidingLayout>

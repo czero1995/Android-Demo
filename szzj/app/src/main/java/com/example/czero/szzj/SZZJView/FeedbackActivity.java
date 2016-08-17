@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 
 import com.example.czero.szzj.R;
+import com.example.czero.szzj.View.SupperTitle;
 
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.BmobUser;
@@ -25,6 +26,11 @@ public class FeedbackActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
+
+        SupperTitle supperTitle;
+        supperTitle = (SupperTitle) findViewById(R.id.suppertitle);
+        supperTitle.setTitle("用户反馈");
+        supperTitle.setTitleBackground(getResources().getColor(R.color.white));
         etfeedbackcontent = (EditText) findViewById(R.id.feedback_content);
         submit = (Button) findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {

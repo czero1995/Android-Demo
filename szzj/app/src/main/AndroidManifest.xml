@@ -40,7 +40,11 @@
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
-        <activity android:name=".SZZJView.WELCOMESZZJ" >
+        <activity android:name=".SZZJView.WELCOMESZZJ"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -52,52 +56,74 @@
         <activity android:name=".SZZJView.ServerActivity"/>
         <activity android:name=".SZZJView.DiscoverActivity"/>
         <activity android:name=".SZZJView.MeActivity"/>
-        <activity android:name=".SZZJView.MineInfoActivity"/>
-        <activity android:name=".SZZJView.MineInfoEditActivity"/>
-        <activity android:name=".SZZJView.FeedbackActivity"/>
-        <activity android:name=".SZZJView.ContactActivity"/>
-        <activity android:name=".SZZJView.LostFoundActivity"/>
-        <activity android:name=".SZZJView.LostFoundAddActivity"/>
-        <activity android:name=".SZZJView.KuaidiActivity"/>
-        <activity android:name=".SZZJView.WaimaiItemActivity"/>
+        <activity android:name=".SZZJView.MineInfoActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.MineInfoEditActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.FeedbackActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.ContactActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.LostFoundActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.LostFoundAddActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity android:name=".SZZJView.WaimaiItemActivity"
+            android:theme="@android:style/Theme.Translucent"/>
         <activity android:name=".SZZJView.WaimaiActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
-        <activity android:name=".SZZJView.SearchphoneActivity"/>
-        <activity android:name=".SZZJView.SecondTradeActivity"/>
-        <activity android:name=".SZZJView.LoveWallActivity"/>
-        <activity android:name=".SZZJView.AmuseTalkActivity"/>
-        <activity android:name=".SZZJView.NewsActivity"/>
-        <activity android:name=".adbanner.BaseWebActivity"/>
-        <activity android:name=".SZZJView.JZZPActivity"/>
-        <activity android:name=".SZZJView.TourActivity"/>
-        <activity android:name=".SZZJView.UnionActivity"/>
-        <activity android:name=".SZZJView.Chizi"/>
-        <activity android:name=".SZZJView.NewPeople"/>
-        <activity android:name=".SZZJView.SearchResultActivity"/>
-        <activity android:name=".SZZJView.LoveWallURL"/>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.SearchphoneActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.SecondTradeActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.LoveWallActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.AmuseTalkActivity"
+         />
+        <activity android:name=".SZZJView.NewsActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+        <activity android:name=".SZZJView.TourActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.UnionActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".SZZJView.Chizi"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity android:name=".SZZJView.LoveWallURL"
+            android:theme="@android:style/Theme.Translucent"/>
+
         <activity android:name=".SZZJView.CourseActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
-        <activity android:name=".SZZJView.UnionItemActivity"/>
+            android:theme="@android:style/Theme.Translucent"
+
+        android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".SZZJView.UnionItemActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
         <activity android:name=".SZZJView.QMCJActivity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
-        <activity android:name=".SZZJView.NewPeopleXSBD"/>
-        <activity android:name=".SZZJView.NewPeopleLXZZ"/>
-        <activity android:name=".SZZJView.NewPeopleXYTB"/>
-        <activity android:name=".SZZJView.NewPeopleCXJT"/>
-        <activity android:name=".SZZJView.NewPeopleGZH"/>
-        <activity android:name=".SZZJView.KuaidiGongjiao"/>
-        <activity android:name=".SZZJView.TourItemActivity"/>
-        <activity android:name=".SZZJView.ActivityNews"/>
-        <activity android:name=".SZZJView.ActivityNewItemActivity"/>
-        <activity android:name=".SZZJView.NewPeopleSZYL"/>
+
+        <activity android:name=".SZZJView.TourItemActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity android:name=".SZZJView.ActivityNews"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity android:name=".SZZJView.ActivityNewItemActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+
         <activity android:name=".SZZJView.DiscoverItemActivity"/>
-        <activity android:name=".SZZJView.PicTextActivity"/>
-        <activity android:name=".SZZJView.NewPeopleGJSC"/>
+
         <activity android:name=".SZZJView.DatiActivity"/>
         <activity android:name=".SZZJView.UnionBaoming"/>
-        <activity android:name=".SZZJView.PicTextBaoming"/>
+
         <activity android:name=".SmartC.SmarcActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+            android:theme="@android:style/Theme.Translucent"
+        android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:noHistory="true"

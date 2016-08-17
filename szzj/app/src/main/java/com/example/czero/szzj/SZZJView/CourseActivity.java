@@ -16,6 +16,8 @@ import com.example.czero.szzj.SZZJModel.Course;
 import com.example.czero.szzj.SZZJModel.Love;
 import com.example.czero.szzj.SZZJModel.Shop;
 import com.example.czero.szzj.SZZJModel.Union;
+import com.example.czero.szzj.View.SupperTitle;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +26,7 @@ import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.GetListener;
 
-public class CourseActivity extends Activity {
+public class CourseActivity extends BaseActivity {
 
 
     private Course course;
@@ -40,6 +42,11 @@ public class CourseActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course);
+
+        SupperTitle supperTitle;
+        supperTitle = (SupperTitle) findViewById(R.id.suppertitle);
+        supperTitle.setTitle("汕职课表通");
+        supperTitle.setTitleBackground(getResources().getColor(R.color.white));
         et_type= (EditText) findViewById(R.id.et_type);
         lvcourse = (ListView) findViewById(R.id.lv_course);
         courseItemListAdapter = new CourseItemListAdapter(CourseActivity.this, (ArrayList<Course>) courses);

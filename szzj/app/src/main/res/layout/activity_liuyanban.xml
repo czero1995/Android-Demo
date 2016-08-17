@@ -2,38 +2,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <include layout="@layout/hearder_liuyanban"/>
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/refresh_amusetalk"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        >
+    <com.example.czero.szzj.View.SupperTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/suppertitle">
+
+   </com.example.czero.szzj.View.SupperTitle>
+        <ImageView
+
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+android:src="@drawable/ic_add"
+            android:layout_alignParentRight="true"
+               />
+    </RelativeLayout>
+
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ListView
         android:id="@+id/lv_amusetalk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"></ListView>
-    </android.support.v4.widget.SwipeRefreshLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/etamusetalk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:hint="留言一下吧!" />
 
-        <Button
-            android:id="@+id/btn_amusetalk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="留言"
-            android:background="@drawable/shape_left_radius_color_square"/>
-    </LinearLayout>
+</com.yalantis.phoenix.PullToRefreshView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/etamusetalk"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="留言一下吧!" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_amusetalk"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="留言"-->
+            <!--android:background="@drawable/shape_left_radius_color_square"/>-->
+    <!--</LinearLayout>-->
 </LinearLayout>

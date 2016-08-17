@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.czero.szzj.R;
+import com.example.czero.szzj.View.SupperTitle;
 
 
 /**
@@ -23,6 +24,10 @@ public class SearchphoneActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searchphone);
+        SupperTitle supperTitle;
+        supperTitle = (SupperTitle) findViewById(R.id.suppertitle);
+        supperTitle.setTitle("号码查询");
+        supperTitle.setTitleBackground(getResources().getColor(R.color.white));
        etsearchlongphone= (EditText) findViewById(R.id.etsearchlongphone);
         searchlongphone= (Button) findViewById(R.id.searchlongphone);
         searchshortphone= (Button) findViewById(R.id.searchshortphone);

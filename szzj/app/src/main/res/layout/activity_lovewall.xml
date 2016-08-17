@@ -2,9 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
-    <include layout="@layout/hearder_lovewall" />
+    <com.example.czero.szzj.View.SupperTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suppertitle">
+
+    </com.example.czero.szzj.View.SupperTitle>
     <ListView
         android:id="@+id/lv_lovewall"
         android:layout_width="match_parent"

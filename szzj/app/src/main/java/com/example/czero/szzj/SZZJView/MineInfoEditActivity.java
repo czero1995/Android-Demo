@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJModel.User;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ import cn.bmob.v3.listener.UpdateListener;
 /**
  * Created by zake on 5/21/16.
  */
-public class MineInfoEditActivity extends Activity {
+public class MineInfoEditActivity extends BaseActivity {
     private EditText etUsername;
     private EditText etSchool;
     private EditText etCademy;

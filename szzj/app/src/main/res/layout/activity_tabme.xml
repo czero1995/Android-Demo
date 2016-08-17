@@ -2,100 +2,193 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginLeft="10dp">
-    <RelativeLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <ImageView
-        android:id="@+id/qquser_logo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/user_background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_face"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/ic_app"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="26dp" />
-    <TextView
-        android:id="@+id/qquser_nickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="汕职之家"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-    </RelativeLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/transparent"
+        />
+
+</RelativeLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/lv_mine_user"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none"></ListView>
-
-
-        <View
-            android:paddingBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#6495ED" />
-
-        <ListView
-            android:id="@+id/lv_go"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </ListView>
+    <ListView
+    android:id="@+id/lv_mine_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"></ListView>
 
 
-        <View
-            android:paddingBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#6495ED" />
+    <ListView
+    android:id="@+id/lv_go"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-        <ListView
-            android:id="@+id/lv_amuse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+    </ListView>
+
+
+
+    <ListView
+    android:id="@+id/lv_amuse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></ListView>
     </LinearLayout>
-    <View
-        android:paddingBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#6495ED" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_share"/>
-        <CheckBox
-            android:id="@+id/checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:layout_gravity="center"
+    android:src="@drawable/ic_share"/>
+    <CheckBox
+    android:id="@+id/checkbox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
 
-            android:text="分享到朋友圈" />
-        <Button
-            android:id="@+id/menu_sendwechat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:text="分享给朋友" />
+    android:text="分享到朋友圈" />
+    <Button
+    android:id="@+id/menu_sendwechat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@null"
+    android:text="分享给朋友" />
     </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--<ImageView-->
+        <!--android:id="@+id/qquser_logo"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:src="@drawable/ic_app"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="26dp" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/qquser_nickname"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="汕职之家"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="30sp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/lv_mine_user"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scrollbars="none"></ListView>-->
+
+
+        <!--<View-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#6495ED" />-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/lv_go"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</ListView>-->
+
+
+        <!--<View-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#6495ED" />-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/lv_amuse"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"></ListView>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#6495ED" />-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_share"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/checkbox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+
+            <!--android:text="分享到朋友圈" />-->
+        <!--<Button-->
+            <!--android:id="@+id/menu_sendwechat"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:text="分享给朋友" />-->
+    <!--</LinearLayout>-->
+
 
 

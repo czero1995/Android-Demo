@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJModel.User;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import cn.bmob.v3.BmobUser;
 
@@ -19,7 +20,7 @@ import cn.bmob.v3.BmobUser;
  * @date 2014-5-21 
  * @author Stone
  */
-public class MineInfoActivity extends Activity {
+public class MineInfoActivity extends BaseActivity {
 
 	private TextView tvUsername;
 	private TextView tvSchool;

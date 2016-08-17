@@ -20,6 +20,7 @@ import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJData.WaimaiListAdapter;
 import com.example.czero.szzj.SZZJModel.QMCJ;
 import com.example.czero.szzj.SZZJModel.Shop;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,7 @@ import java.util.List;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.listener.FindListener;
 
-public class WaimaiActivity extends Activity implements AdapterView.OnItemClickListener, SwipeRefreshLayout.OnRefreshListener{
+public class WaimaiActivity extends BaseActivity implements AdapterView.OnItemClickListener, SwipeRefreshLayout.OnRefreshListener{
     private TextView tvTitle;
     private TextView tvEmptyBg;  //当数据为空时现实的视图
     private ImageButton btn_waimaisearch;

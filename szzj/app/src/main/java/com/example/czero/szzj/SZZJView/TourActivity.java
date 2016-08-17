@@ -2,8 +2,10 @@ package com.example.czero.szzj.SZZJView;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -11,6 +13,8 @@ import android.widget.Toast;
 import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJData.TourListAdapter;
 import com.example.czero.szzj.SZZJModel.Tour;
+import com.example.czero.szzj.View.SupperTitle;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +24,7 @@ import cn.bmob.v3.listener.FindListener;
 
 
 
-public class TourActivity extends Activity implements AdapterView.OnItemClickListener {
+public class TourActivity extends BaseActivity implements AdapterView.OnItemClickListener {
 
 
 	private ListView lvtour;
@@ -33,11 +37,21 @@ public class TourActivity extends Activity implements AdapterView.OnItemClickLis
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tour);
 
+		SupperTitle supperTitle;
+		supperTitle = (SupperTitle) findViewById(R.id.suppertitle);
+		supperTitle.setTitle("年轻即出发");
+		supperTitle.setTitleBackground(getResources().getColor(R.color.white));
 		lvtour = (ListView) findViewById(R.id.lv_tour);
 		tourListAdapter = new TourListAdapter(TourActivity.this, (ArrayList<Tour>) tours);
 		lvtour.setAdapter(tourListAdapter);
 		getTourData();
 		lvtour.setOnItemClickListener(this);
+		if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT){
+			//透明状态栏目
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+			//透明导航栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+		}
 
 	}
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

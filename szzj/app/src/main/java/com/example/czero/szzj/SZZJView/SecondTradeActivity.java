@@ -1,8 +1,10 @@
 package com.example.czero.szzj.SZZJView;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
@@ -13,6 +15,8 @@ import android.widget.Toast;
 import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJData.TradeItemListAdapter;
 import com.example.czero.szzj.SZZJModel.SecondTrade;
+import com.example.czero.szzj.View.SupperTitle;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +31,7 @@ import cn.bmob.v3.listener.FindListener;
  * @author Stone
  * @date  2014-4-26 
  */
-public class SecondTradeActivity extends Activity implements OnItemClickListener {
+public class SecondTradeActivity extends BaseActivity implements OnItemClickListener {
 
 
 	private TextView tvTitle;
@@ -41,8 +45,19 @@ public class SecondTradeActivity extends Activity implements OnItemClickListener
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_secondtrade);
+
+		SupperTitle supperTitle;
+		supperTitle = (SupperTitle) findViewById(R.id.suppertitle);
+		supperTitle.setTitle("姜是老的辣，货是旧的香");
+		supperTitle.setTitleBackground(getResources().getColor(R.color.white));
 		getTradeItemData();
 		initView();
+		if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT){
+			//透明状态栏目
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+			//透明导航栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+		}
 		
 	}
 	

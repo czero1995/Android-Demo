@@ -2,6 +2,7 @@ package com.example.czero.szzj.SZZJView;
 
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -83,6 +84,12 @@ public class LostFoundActivity extends LostFoundBaseActivity implements View.OnC
                 }
             }
         });
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT){
+            //透明状态栏目
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            //透明导航栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
 
     }
 

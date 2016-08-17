@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#6495ED">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_loudspeaker4"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_activity"/>
+
+        <com.example.czero.szzj.SZZJData.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_activity"
+                android:padding="10dip"
+                android:text="活动咨询"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_news"
+                android:padding="10dip"
+                android:text="新闻速推"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/hbhz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_hbhz"
+                android:padding="10dip"
+                android:text="互帮互助"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/lovewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_love"
+                android:padding="10dip"
+                android:text="表白墙"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/pic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_pictext"
+                android:padding="10dip"
+                android:text="爱图文"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/amusetalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_amusetalk"
+                android:padding="10dip"
+                android:text="留言版"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/qnzz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_qnzz"
+                android:padding="10dip"
+                android:text="青年杂志"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/nsns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_nsns"
+                android:padding="10dip"
+                android:text="男神女神"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/smartc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_smartc"
+                android:padding="10dip"
+                android:text="汕职小C"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:id="@+id/lv_discover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>
+
+
+
+
+

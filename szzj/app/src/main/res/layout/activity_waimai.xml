@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/lightgray">
 <include layout="@layout/hearder_waimai"/>
     <TextView
         android:id="@+id/ll_msg_empty"

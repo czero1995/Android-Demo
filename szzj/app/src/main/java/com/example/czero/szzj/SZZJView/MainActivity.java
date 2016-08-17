@@ -4,9 +4,13 @@ import android.app.AlertDialog;
 import android.app.TabActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -25,15 +29,19 @@ public class MainActivity extends TabActivity{
 
     private TabHost tabHost;
     private LayoutInflater layoutInflater;
-    String[] mTitle = new String[]{"校园服务", "发现", "我"};
-    int[] mIcon = new int[]{R.drawable.ic_server, R.drawable.ic_discover, R.drawable.ic_me};
+    String[] mTitle = new String[]{"校园服务", "汕职圈", "我"};
+    int[] mIcon = new int[]{R.drawable.ic_server_press, R.drawable.ic_discover, R.drawable.ic_person};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initTabView();
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//沉浸色
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);//透明状态栏
+        }
         String DB_PATH = "/data/data/com.example.czero.szzj/databases/";
         String DB_NAME = "question.db";
         if (new File(DB_PATH + DB_NAME).exists() == false) {
@@ -66,9 +74,11 @@ public class MainActivity extends TabActivity{
         Intent intent1 = new Intent(this, ServerActivity.class);
         spec = tabHost.newTabSpec(mTitle[0]).setIndicator(getTabItemView(0)).setContent(intent1);
         tabHost.addTab(spec);
-        Intent intent2 = new Intent(this, DiscoverActivity.class);
+
+        Intent intent2 = new Intent(this, AmuseTalkActivity.class);
         spec = tabHost.newTabSpec(mTitle[1]).setIndicator(getTabItemView(1)).setContent(intent2);
         tabHost.addTab(spec);
+
         Intent intent3 = new Intent(this, MeActivity.class);
         spec = tabHost.newTabSpec(mTitle[2]).setIndicator(getTabItemView(2)).setContent(intent3);
         tabHost.addTab(spec);
@@ -84,10 +94,5 @@ public class MainActivity extends TabActivity{
         textView.setText(mTitle[i]);
         return view;
     }
-
-private void toast(String toast){
-    Toast.makeText(MainActivity.this,toast,Toast.LENGTH_SHORT).show();
-}
-
 
 }

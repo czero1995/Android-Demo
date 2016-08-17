@@ -10,8 +10,9 @@ import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJModel.Course;
 import com.example.czero.szzj.SZZJModel.Shop;
 import com.example.czero.szzj.SZZJModel.Union;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 
-public class UnionItemActivity extends Activity {
+public class UnionItemActivity extends BaseActivity {
 
 
     private Union union;

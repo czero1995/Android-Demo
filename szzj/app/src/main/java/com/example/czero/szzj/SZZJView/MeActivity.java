@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -14,6 +15,7 @@ import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -29,6 +31,7 @@ import com.example.czero.szzj.R;
 import com.example.czero.szzj.SZZJData.HappyListAdapter;
 
 import com.example.czero.szzj.SZZJData.QQUtil;
+import com.example.czero.szzj.View.backactivity.BaseActivity;
 import com.tencent.connect.UserInfo;
 import com.tencent.connect.common.Constants;
 import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
@@ -63,9 +66,9 @@ public class MeActivity extends Activity implements AdapterView.OnItemClickListe
     private static Intent mPrizeIntent = null;
     private static boolean isServerSideLogin = false;
 
-    private String[] userItemNames = {"szzj"};
+    private String[] userItemNames = {"修改资料"};
     private String[] userItemContents = {""};
-    private String[] goItemNames = {"QQ登陆", "登陆注册"};
+    private String[] goItemNames = {"QQ登陆"};
     private String[] goItemContents = {"", ""};
     private String[] amuseItemNames = {"联系我们", "用户反馈", "推荐给朋友", "退出账号"};
     private String[] amuseItemContents = {"", "", "", ""};
@@ -95,8 +98,7 @@ public class MeActivity extends Activity implements AdapterView.OnItemClickListe
         lvMinUser.setOnItemClickListener(this);
         lvGo.setOnItemClickListener(this);
         lvAmuse.setOnItemClickListener(this);
-        mUserInfo = (TextView) findViewById(R.id.qquser_nickname);
-        mUserLogo = (ImageView) findViewById(R.id.qquser_logo);
+
         mTencent = Tencent.createInstance("1105432676", this.getApplicationContext());
         api = WXAPIFactory.createWXAPI(getBaseContext(), APP_ID);
         api.registerApp(APP_ID);
@@ -148,6 +150,7 @@ public class MeActivity extends Activity implements AdapterView.OnItemClickListe
             }
         });
         initView();
+
     }
 
     private void initView() {
@@ -169,14 +172,6 @@ public class MeActivity extends Activity implements AdapterView.OnItemClickListe
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        if (parent.getId() == R.id.lv_mine_user) {
-            switch (position) {
-                case 0:
-                    Intent toMineInfo = new Intent(MeActivity.this, MineInfoActivity.class);
-                    startActivity(toMineInfo);
-                    break;
-            }
-        }
         if (parent.getId() == R.id.lv_go) {
             switch (position) {
                 case 0:
@@ -229,26 +224,7 @@ public class MeActivity extends Activity implements AdapterView.OnItemClickListe
         }
     }
 
-    public void onBackPressed() {
-        new android.app.AlertDialog.Builder(this).setTitle("确认退出汕职之家吗？")
-                .setIcon(android.R.drawable.ic_dialog_info)
-                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
 
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // 点击“确认”后的操作
-                        MeActivity.this.finish();
-
-                    }
-                })
-                .setNegativeButton("返回", new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // 点击“返回”后的操作,这里不设置没有任何操作
-                    }
-                }).show();
-    }
 
     private String buildTransaction(final String type) {
         return (type == null) ? String.valueOf(System.currentTimeMillis()) : type + System.currentTimeMillis();

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <ImageView
+        android:id="@+id/welcomeimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp" />
+<TextView
+    android:id="@+id/jump"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:textColor="#50ffffff"
+    android:textSize="22sp"
+    android:layout_toLeftOf="@+id/count_down"
+    android:gravity="center"
+    android:text="跳过"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/count_down_background" />
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/count_down_background"
+        android:gravity="center"
+        android:textColor="#50ffffff"
+        android:textSize="32sp"
+        tools:text="2" />
+</RelativeLayout>

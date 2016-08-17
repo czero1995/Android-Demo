@@ -23,7 +23,7 @@ public class DiscoverItemActivity extends Activity {
         setContentView(R.layout.activity_discoveritem);
         discover = (Discover) getIntent().getSerializableExtra("discover");
         discoverID = getIntent().getStringExtra("discoverID");
-        discovername = (TextView) findViewById(R.id.discovername);
+
         discovercontent = (TextView) findViewById(R.id.discoveritemcontent);
         discovername.setText(discover.getDiscovername());
         discovercontent.setText(discover.getDiscoveritemcontent());
