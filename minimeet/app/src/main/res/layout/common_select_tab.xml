@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/common_tv_selecttab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="4dp"
+        android:textSize="14sp"
+        android:paddingBottom="4dp"
+        android:textColor="#ffffff"
+        android:text="LINHOMHOM"/>
+    <TextView
+        android:id="@+id/tv_unread_label"
+        android:layout_width="8dp"
+        android:layout_toRightOf="@id/common_tv_selecttab"
+        android:layout_alignTop="@id/common_tv_selecttab"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginRight="12dp"
+        android:layout_height="8dp"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/mainblue</item>
+        <item name="colorPrimaryDark">@color/lightblue</item>
+        <item name="colorAccent">@color/orangeyellow</item>
+
+    </style>
+
+
+
+
+    <style name="splash_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/ic_launcher</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+    </style>
+
+    <!-- Base tabLayoutStyle theme. -->
+    <style name="tabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="tabTextAppearance">@style/tabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/mainblue</item>
+        <item name="tabPaddingStart">18dp</item>
+        <item name="tabPaddingEnd">20dp</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabIndicatorColor">@color/mainblue</item>
+        <item name="tabMode">scrollable</item>
+    </style>
+    <!-- Base tabLayoutStyle  theme. -->
+    <style name="tabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/charactersmix</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@mipmap/ic_launcher</item>
+        <item name="android:minHeight">17dp</item>
+        <item name="android:maxHeight">17dp</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="commentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@mipmap/ic_launcher</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--专家详情界面的tab样式-->
+    <style name="expert_pagertab_style">
+        <item name="apTabBackground">@color/white</item>
+    </style>
+
+    <style name="PopupAnimaFade" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+
+    <!--为了控制switch的颜色-->
+    <style name="switchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/mainblue</item>
+        <item name="colorPrimaryDark">@color/mainblue</item>
+        <item name="colorAccent">@color/mainblue</item>
+
+    </style>
+
+    <style name="edt_expert_addr">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+
+    <!--R.layout.fragment_meet_negotiation的-->
+    <style name="order_linearlayout_item" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">碰咖</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cancel_tip_expert">【碰咖】将通知学员，您需要取消约见，约见将在其同意后取消，费用将退还学员。</string>
+
+    <string name="cancel_tip_student">【碰咖】将通知大咖，您需要取消约见，约见将在其同意后取消，费用将退还。</string>
+
+    <string name="introduce_myself_info">我叫&#160;&#160;&#160;，目前正在O2O方向创业，在产品推广上遇到一些问题，想向老师请教一下如何从零开始新产品推广，有没有比较成熟的推广方案，最好能介绍一些免费的推广渠道？\n\n
+
+我一般在中关村活动，希望能尽量安排在周末见面。</string>
+
+    <string name="rule_negotiation_student">欢迎使用碰咖服务。\n
+        为了获得更好的约见效果，碰咖建议您:\n
+        1、提前准备问题，并通过私信与大咖沟通见面细节;\n
+        2、准时到达约见地点，若遇不可抗力，务必提前告知大咖或与客服沟通;\n
+        3、若对见面过程有任何不满意，请拨打客服电话获得来自碰咖平台的帮助。
+    </string>
+
+    <string name="rule_negotiation_expert">欢迎使用碰咖服务。\n
+        为了获得更好的约见效果，碰咖建议您;\n
+        1、提前通过私信与学员沟通见面细节，针对学员问题预先准备，以便交流更加有的放矢、更能帮到对方;\n
+        2、准时到达约见地点，若遇不可抗力，务必提前告知学员或与客服沟通;\n
+        3、若见面过程遇到任何问题，请拨打客服电话获得来自碰咖平台的帮助。
+    </string>
+
+    <string name="rule_topic_price">
+        学员普遍能接受的价格在200-500元/次(小时)之间。因此，建议您讲话题价格设定在这一区间内更有利于获得约见机会。
+    </string>
+
+    <string name="hint_intro">
+        审核需要您提供相识的职业经理，包括在职时间、公司职务及经历，如有信息不便公开，可在审核通过后进行修改。
+    </string>
+
+    <string name="hint_personal_info">
+        您也可以登录网页版碰咖填写个人信息\n
+        http://pk.bczp.cn
+    </string>
+
+    <string name="hint_personal_links_1">
+        请在此附上您的博客地址或者网络上关于您的报道的链接，请按：标题：网址的格式填写，每行一个链接\n
+    </string>
+    <string name="hint_personal_links_2">
+        如：\n我的微博：http://www.weibo.com\n我的知乎：http://www.zhihu.com
+    </string>
+</resources>

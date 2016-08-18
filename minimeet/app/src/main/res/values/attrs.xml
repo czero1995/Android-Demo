@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--设置项目-->
+    <declare-styleable name="LineItem">
+        <attr name="textcolor" format="reference"/>
+        <attr name="rightimage" format="reference"/>
+        <attr name="midcontent" format="string"/>
+        <attr name="lineShown" format="boolean" />
+    </declare-styleable>
+
+    <!--公共标题-->
+    <declare-styleable name="SupperTitle">
+        <attr name="leftDrawable" format="reference"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="leftAction" format="string"/>
+        <attr name="rightAction" format="string"/>
+        <attr name="leftText" format="string"/>
+        <attr name="rightText" format="string"/>
+        <attr name="bottomText" format="string"/>
+        <attr name="barHeight" format="dimension"/>
+        <attr name="searchTitle" format="boolean"/>
+        <attr name="barBackground" format="reference"/>
+    </declare-styleable>
+
+    <!--加载进度条-->
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpbStyle" format="reference"/>
+        <attr name="cpb_color" format="color"/>
+        <attr name="cpb_colors" format="reference"/>
+        <attr name="cpb_stroke_width" format="dimension"/>
+        <attr name="cpb_min_sweep_angle" format="integer"/>
+        <attr name="cpb_max_sweep_angle" format="integer"/>
+        <attr name="cpb_sweep_speed" format="float"/>
+        <attr name="cpb_rotation_speed" format="float"/>
+    </declare-styleable>
+
+    <!--搜索标签栏-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--标题导航栏-->
+    <declare-styleable name="AdvancedPagerSlidingTabStrip">
+        <attr name="apTabIndicatorColor" format="color"/>
+        <attr name="apTabUnderlineColor" format="color"/>
+        <attr name="apTabDividerColor" format="color"/>
+        <attr name="apTabTextSelectColor" format="color"/>
+        <attr name="apTabIndicatorHeight" format="dimension"/>
+        <attr name="apTabUnderlineHeight" format="dimension"/>
+        <attr name="apTabDividerPadding" format="dimension"/>
+        <attr name="apTabPaddingLeftRight" format="dimension"/>
+        <attr name="apTabPaddingTopBottom" format="dimension"/>
+        <attr name="apTabScrollOffset" format="dimension"/>
+        <attr name="apTabBackground" format="reference"/>
+        <attr name="apTabShouldExpand" format="boolean"/>
+        <attr name="apTabTextAllCaps" format="boolean"/>
+        <attr name="apTabDrawMode" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="text" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+</resources>
